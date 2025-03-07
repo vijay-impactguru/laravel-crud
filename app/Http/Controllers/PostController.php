@@ -25,7 +25,7 @@ class PostController extends Controller
     // Show the form for creating a new post
     public function create()
     {
-        $repo = new PostRepository;
+        //$repo = new PostRepository;
         $categories = Category::pluck('name', 'id');
         return view('posts.create',compact('categories'));
     }
